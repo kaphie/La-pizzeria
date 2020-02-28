@@ -51,11 +51,6 @@ margin-bottom: 50px;
     margin-top: 20px;
     color: #000;
 }
-
-figcaption {
-    font-family: 'Oswald', serif;
-}
-
 #menu {
     padding-top: 20px;
 }
@@ -63,11 +58,8 @@ figcaption {
 #order-pizza {
     color: #000;
 }
-
-
 #list li {
     font-size: 24px;
-    font-family: system-ui, serif;
 }
 
 .order-summary h1, .summary, .contact {
@@ -76,7 +68,7 @@ figcaption {
 }
 
 .contacts {
-    background-image: url("../images/sec/b1.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
