@@ -177,11 +177,6 @@ h4 {
     background-image: url("../images/bckgrnd.jpg");
     padding: 0;
 }
-
-#menu {
-    font-family: 'Love Ya Like A Sister', cursive;
-}
-
 .menu-overlay {
     height: inherit;
     width: inherit;
@@ -293,7 +288,7 @@ figure img {
         padding-top: 40%;
     }
 
-    .karibu-txt {
+    .man-txt {
         margin-top: 50px;
     }
 
@@ -303,7 +298,7 @@ figure img {
         background-color: rgba(0, 0, 0, 0.7);
     }
 
-    .karibu-img {
+    .man-img {
         margin-left: 20px;
         margin-bottom: 10px;
         height: 300px;
