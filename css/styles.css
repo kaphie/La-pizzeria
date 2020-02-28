@@ -64,6 +64,7 @@ figcaption {
     color: #000;
 }
 
+
 #list li {
     font-size: 24px;
     font-family: system-ui, serif;
@@ -114,7 +115,7 @@ input[type="email"] {
 
 .data {
     height: inherit;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(146, 122, 122, 0.8);
     border-radius: 10px;
 }
 
