@@ -17,6 +17,8 @@ body {
     color: yellow;
 }
 .home_text{
+    height: auto;
+    width: auto;
     background-image: url(../images/pizza2.jpeg);
 }
 #pizza{
@@ -39,6 +41,9 @@ li {
 .h-buttons button {
     border-radius: 40px;
     color: black;
+}
+.button{
+margin-bottom: 50px;
 }
 
 .menu-btn {
