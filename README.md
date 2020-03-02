@@ -9,7 +9,7 @@ A pizza ordering web application.
 > Kafrika Benitah
 
 ## Screenshot:
-
+<img src="https://github.com/kaphie/La-pizzeria/blob/master/images/screencapture-127-0-0-1-5500-index-html-2020-03-02-17_30_37.png">
 
 ## Setup:
 `
