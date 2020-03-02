@@ -17,6 +17,16 @@ nav{
 }
 .exc {
     color: yellow;
+    font-family: 'Rock Salt';
+}
+
+.pizz {
+    color: lawngreen;
+    font-family: 'Rock Salt';
+}
+.txt{
+    font-family: 'Pangolin';
+    ;
 }
 .home_text{
     height: auto;
@@ -24,7 +34,6 @@ nav{
     background-image: url(../images/pizza2.jpeg);
 }
 #pizza{
-    font-family: 'Shadows Into Light', cursive;
     font-size: 35px;
     font-weight: normal;
     color: darkorange;
@@ -161,10 +170,6 @@ h4 {
 
 #list {
     color: #000;
-}
-
-.pizz {
-    color: lawngreen;
 }
 
 .menu {
