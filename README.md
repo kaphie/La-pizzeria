@@ -1,6 +1,6 @@
 # La-pizzeria!
 
-[Check it out]()
+[Check it out](https://kaphie.github.io/La-pizzeria/)
 
 ## Description: 
 A pizza ordering web application.
