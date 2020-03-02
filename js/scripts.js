@@ -3,7 +3,7 @@ $(function () {
     $('.cdata-overlay').hide();
 //Get inputs
     $("#checkout").click(function () {
-        let flavour = $(".flavour option:selected").val();
+        let quality =$(".quality option:selected").val()
         let size = $("#size option:selected").val();
         let crust = $("#crust option:selected").val();
         let topping = $("#toppings option:selected").val();
@@ -11,54 +11,14 @@ $(function () {
         console.log(size);
 
         //Function order
-        let order = (s, c, t, n, total) => {
-            return { s, c, t, n, total};
+        let order = (q, s, c, t, n, total) => {
+            return {q, s, c, t, n, total};
         };
 
         //check price
         let price, totalPrice;
-        switch (flavour) {
-            case flavour = "vegtikka":
-                switch (size) {
-                    case size = "small":
-                        price = 300;
-                        if (crust === "crispy") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "stuffed") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "gluten-free") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "medium":
-                        price = 500;
-                        if (crust === "crisp") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "stuffed") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "gluten-free") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "large":
-                        price = 1200;
-                        if (crust === "crispy") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "stuffed") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "gluten-free") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                }
-                break;
-            case flavour = "chickentikka":
+        switch (quality) {
+            case quality = "high_quality":
                 switch (size) {
                     case size = "small":
                         price = 300;
@@ -98,7 +58,8 @@ $(function () {
                         break;
                 }
                 break;
-            case flavour = "periperi":
+          
+            case quality = "medium_quality":
                 switch (size) {
                     case size = "small":
                         price = 300;
@@ -138,7 +99,7 @@ $(function () {
                         break;
                 }
                 break;
-            case flavour = "bbq":
+            case quality = "low_quality":
                 switch (size) {
                     case size = "small":
                         price = 300;
@@ -178,46 +139,6 @@ $(function () {
                         break;
                 }
                
-                break;
-            case flavour = "hawaiian":
-                switch (size) {
-                    case size = "small":
-                        price = 300;
-                        if (crust === "crispy") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "stuffed") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "gluten-free") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "medium":
-                        price = 500;
-                        if (crust === "small") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "stuffed") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "gluten-free") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "large":
-                        price = 1200;
-                        if (crust === "small") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "stuffed") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "gluten-free") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                }
               
                 
                 break;
@@ -232,7 +153,6 @@ $(function () {
             case topping = "olives":
                 totalPrice = totalPrice + 130;
                 break;
-                break;
             case topping = "beef":
                 totalPrice = totalPrice + 180;
                 break;
@@ -243,7 +163,7 @@ $(function () {
         }
 
         //Execute order function
-        let newOrder = order(flavour, size, crust, topping, number, totalPrice);
+        let newOrder = order(quality, size, crust, topping, number, totalPrice);
         console.log(newOrder); // test func
 
         //create a new object
@@ -257,7 +177,7 @@ $(function () {
         $('.delivernot').show(1000);
 
         $('#list').text(" ");
-        $("#list").append("<br>"  + "<br>" + "Size :   "
+        $("#list").append("<br>" + "Quality :   " + newOrder.q+ "<br>" + "Size :   "
             + newOrder.s + "<br>" + "Crust :     "
             + newOrder.c + "<br>" + "Toppings :     "
             + newOrder.t + "<br>" + " Number of pizzas :    "
@@ -281,8 +201,4 @@ $(function () {
 
     });
 
-    //Scrollify
-    $(function () {
-        $.scrollify.move('#sum-order');
-    });
 });
