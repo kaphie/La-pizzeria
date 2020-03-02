@@ -23,7 +23,7 @@ A pizza ordering web application.
 ## BDD:
 | Inputs |  Description |
 | :---         |          ---: |
-| Pizza Flavour   | `eg chicken-tikka`|
+| Pizza Flavour   | `eg veg-tikka`|
 | Pizza size     | `eg medium`   |
 | Pizza crust    | `eg crispy crust`   |
 | Pizza topping    | `eg Beef peperoni`  |
