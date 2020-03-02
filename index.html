@@ -67,20 +67,36 @@
 <div class="menu col-md-12">
     <div class="menu-overlay">
         <h1 class="text-center text-white" id="menu">Menu</h1>
+        <form action="" id="pizza_size_select"></form>
         <div class="pizza-menu row text-center">
+            
             <figure class="col-sm-4">
                 <img src="images/small.jpeg" alt="small-pizza" class="wiggle">
-                <figcaption class="text-white">Regular<br>Ksh. 300</figcaption>
+                <figcaption class="text-white">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input size_it" type="radio" name="size" id="inlineRadio1" value="small">
+                    <label class="form-check-label" for="inlineRadio1">Small<br>Ksh. 300</label>
+                  </div></figcaption>
             </figure>
             <figure class="col-sm-4">
                 <img src="https://bit.ly/3acDmwL" alt="medium-pizza" class="wiggle">
-                <figcaption class="text-white">Medium<br>Ksh. 600</figcaption>
+                <figcaption class="text-white">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input size_it" type="radio" name="size" id="inlineRadio2" value="medium">
+                    <label class="form-check-label" for="inlineRadio1">Medium<br>Ksh. 500</label>
+                  </div></figcaption>
             </figure>
             <figure class="col-sm-4">
                 <img src="https://bit.ly/2wgw6BC" alt="large-pizza" class="wiggle">
-                <figcaption class="text-white">Large<br>Ksh. 1200</figcaption>
+                <figcaption class="text-white">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input size_it" type="radio" name="size" id="inlineRadio3" value="large">
+                    <label class="form-check-label" for="inlineRadio1">large<br>Ksh. 1200</label>
+                  </div></figcaption>
             </figure>
         </div>
+    </form>
+
     </div>
 </div>
 <!--order-->

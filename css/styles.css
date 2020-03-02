@@ -6,13 +6,15 @@ body {
 }
 
 #spantext {
-    color: yellow;
+    background-color: yellow;
 }
 
 .navi {
     float:left
 }
-
+nav{
+    background-color: black;
+}
 .exc {
     color: yellow;
 }
