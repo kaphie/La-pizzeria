@@ -74,7 +74,6 @@
                 <img src="images/small.jpeg" alt="small-pizza" class="wiggle">
                 <figcaption class="text-white">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input size_it" type="radio" name="size" id="inlineRadio1" value="small">
                     <label class="form-check-label" for="inlineRadio1">Small<br>Ksh. 300</label>
                   </div></figcaption>
             </figure>
@@ -82,7 +81,6 @@
                 <img src="https://bit.ly/3acDmwL" alt="medium-pizza" class="wiggle">
                 <figcaption class="text-white">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input size_it" type="radio" name="size" id="inlineRadio2" value="medium">
                     <label class="form-check-label" for="inlineRadio1">Medium<br>Ksh. 500</label>
                   </div></figcaption>
             </figure>
@@ -90,7 +88,6 @@
                 <img src="https://bit.ly/2wgw6BC" alt="large-pizza" class="wiggle">
                 <figcaption class="text-white">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input size_it" type="radio" name="size" id="inlineRadio3" value="large">
                     <label class="form-check-label" for="inlineRadio1">large<br>Ksh. 1200</label>
                   </div></figcaption>
             </figure>
@@ -106,29 +103,26 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-8 order-overlay text-center">
             <form class="col-sm-6 offset-sm-3 text-center">
-                <label>Pick your pizza Flavour:</label>
+                <label>Pizza Flavour:</label>
                 <select class="custom-select custom-select-md mb-3 flavour" required>
-                    <option value="vegtikka">Veg Tikka</option>
                     <option value="chickentikka">Chicken Tikka</option>
                     <option value="periperi">Peri-Peri Chicken</option>
                     <option value="bbq">BBQ Steak</option>
-                    <option value="boerewors">Boerewors</option>
                     <option value="hawaiian">Hawaiian</option>
                     <option value="mushroom">Chicken and Mushroom</option>
-                    <option value="Secret"> Secret recipe</option>
                 </select>
-                <label>Chose your preferred Size:</label>
+                <label>Preferred Size:</label>
                 <select class="custom-select custom-select-md mb-3" id="size" required>
-                    <option value="regular">Regular</option>
+                    <option value="small">Small</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
                 </select>
-                <label for="crust">Choose your favorite Crust:</label>
+                <label for="crust">Favorite Crust:</label>
                 <select class="custom-select custom-select-md mb-3" id="crust" required>
                     <option value="crispy">Crispy Crust @ Ksh. 100</option>
-                    <option value="stuffed">Stuffed Crust @ Ksh. 200</option>
-                    <option value="gluten-free">Gluten-free Crust @ sh. 180</option>
-                    
+                    <option value="stuffed">Stuffed Crust @ Ksh. 150</option>
+                    <option value="gluten-free">Gluten-free Crust @ sh. 200</option>
+                    <option value="custom">Custom Crust @ sh. 280</option>
                 </select>
                 <label>Select Your favourite Toppings</label>
                 <select class="custom-select custom-select-md mb-3" id="toppings" required>
@@ -138,11 +132,6 @@
                     <option value="greenpepper">Green Pepper @ sh. 50</option>
                     <option value=""></option>
                     <option value="olives">Olives @ sh. 130</option>
-                    <option value="pineapple">Pineapple @ sh. 130</option>
-                    <option value="sweetcorn">Sweet Corn @ sh. 130</option>
-                    <option value="macon">Macon @ sh. 130</option>
-                    <option value="mince">Mince @ sh. 130</option>
-                    <option value=""></option>
                     <option value="beef">Beef Peperoni @ sh. 180</option>
                     <option value="chicken">Periperi Chicken @ sh. 180</option>
                 </select>
@@ -164,7 +153,7 @@
 
 <div class="order-summary" id="sum-order">
     <h1 class="text-center" id="summary">Order Summary</h1>
-    <h2 class="text-center summary">Hey,this is your :</h2>
+    <h2 class="text-center summary">Hey,this is your order :</h2>
     <ol id="list" class="text-center sum">
     </ol>
 
