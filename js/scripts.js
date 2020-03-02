@@ -11,8 +11,8 @@ $(function () {
         console.log(size);
 
         //Function order
-        let order = (f, s, c, t, n, total) => {
-            return {f, s, c, t, n, total};
+        let order = (s, c, t, n, total) => {
+            return { s, c, t, n, total};
         };
 
         //check price
@@ -257,7 +257,7 @@ $(function () {
         $('.delivernot').show(1000);
 
         $('#list').text(" ");
-        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
+        $("#list").append("<br>"  + "<br>" + "Size :   "
             + newOrder.s + "<br>" + "Crust :     "
             + newOrder.c + "<br>" + "Toppings :     "
             + newOrder.t + "<br>" + " Number of pizzas :    "
