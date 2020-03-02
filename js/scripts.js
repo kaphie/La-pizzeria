@@ -117,7 +117,7 @@ $(function () {
                         break;
                     case size = "medium":
                         price = 500;
-                        if (crust === "small") {
+                        if (crust === "crispy") {
                             totalPrice = (price * number) + 100;
                         } else if (crust === "stuffed") {
                             totalPrice = (price * number) + 150;
@@ -129,7 +129,7 @@ $(function () {
                         break;
                     case size = "large":
                         price = 1200;
-                        if (crust === "small") {
+                        if (crust === "crispy") {
                             totalPrice = (price * number) + 100;
                         } else if (crust === "stuffed") {
                             totalPrice = (price * number) + 150;
