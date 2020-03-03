@@ -15,7 +15,7 @@ $(function () {
             return {f, s, c, t, n, total};
         };
 
-        //check price
+        
         let price, totalPrice;
         switch (flavour) {
             case flavour = "vegtikka":
@@ -165,10 +165,8 @@ $(function () {
 
         //Execute order function
         let newOrder = order(flavour, size, crust, topping, number, totalPrice);
-        console.log(newOrder); // test func
+        console.log(newOrder); 
 
-        //create a new object
-        // let myOrder = JSON.stringify(JSON.parse(newOrder));
 
         //Write to the order
         $('.summary').slideDown(2000);
